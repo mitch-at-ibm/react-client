@@ -7,10 +7,7 @@ script:
 - docker run -e CI=true ibmmitchmakos/react-client:latest npm run test -- --coverage
 deploy:
   provider: openshift
-  user: IAM#mitchell.makos@ibm.com
-  password:
-    secure: b7ErJVpWgQ2cEx1NnUqCVeCigA82P0eqc1DcoYIr5SnPOhTmHrhtmRePImszkpdSvyVK4u334Vi2BuyYcxqtezfFbvexVgnH+G+9uPha6geqm3BGOoSdR9I1Fb02qCs2vd62zs8njFDS1x2b3K87kW5aiFW2hD/OHersRZPcngToonMzNpXUMmYpevFotaiHSUe5YUKgIb6P86sUj9q6ziYQyQJLuM1377GjAscFWTVla6njFIC/sMFAmfAQhl/GI09hKPVgsoEgwQuwPzOSD8FScy2uI9kG3eLXrrSXNpImN5jH4lQN8VN5jRHZF9xb70oudxFUAu8WC5GGbVAAZLslEtZZyyBoSd11yCigE1sgzSHnu4/QudRqaX8LegHuh360wHbJIp1hg9KmvhK6uaXi3T0u1StCXfqUMhzosgKC852R4xL/S4kVOHl2L5wfA+IjDslhUWRmvnfiG1lAogp73yAeAuDx0TkRnTPyFxiZFAWyfF/04Kkwj/V+m0qUIVkcv8vf2E9oDyX+LkBBDsXd6UkqwWhDOyyKhWe6Uim9ERx5Ou3gNOPM+TstVBK9tS7hfVlS494SL6sZzBpBT2fi2MtK52jZby8gA9yHmhVd2rX/+dauyYtZGkO9PmM+DhmhwWMO6FxFTH8bs278DuPn0g5w7IldidlE93Zs+Yg=
+  user: mitchell.makos@ibm.com
+  password: IBM05041992Garage$
   app: react-client
-  domain: travis-msm.mooc-one-ocp-clus-532507-0143c5dd31acd8e030a1d6e0ab1380e3-0000.us-east.containers.appdomain.cloud
-  on:
-    repo: mitch-at-ibm/react-client
+  domain: mooc-one-ocp-clus-532507-0143c5dd31acd8e030a1d6e0ab1380e3-0000.us-east.containers.appdomain.cloud
