@@ -6,4 +6,4 @@ before_install:
   - docker build -t ibmmitchmakos/react-client:latest -f Dockerfile.dev .
 
 script:
-  - docker run ibmmitchmakos/react-client:latest npm run test -- --coverage
+  - docker run -e CI=true ibmmitchmakos/react-client:latest npm run test -- --coverage
